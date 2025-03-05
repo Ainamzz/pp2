@@ -1,7 +1,7 @@
 #проверяет наличие одной заглавной буквы,за которой следуют строчные буквы
 import re
 def find(text):
-    a = r'\b[a-z]+_[a-z]+\b'
+    a = r'\b[A-Z][a-z]+\b'
     res = re.findall(a, text)
     return res
 b = input("Enter a sentence: ")
